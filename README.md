@@ -25,6 +25,10 @@
   
   As this is currently just a back-end, you can use the schema to create the database in pg_admin. 
   
+  Make sure to create a .env file and add DB_NAME, DB_USER, and DB_PASSWORD values to connect to your database.
+
+  Run 'npm i' to install dependencies.
+  
   Run 'node seeds/index.js' on the command line to seed the database, then run 'node server.js' to start the server. 
   
   You can then add, update, delete and search categories, products, and tags using Insomnia.

@@ -15,6 +15,7 @@ Product.belongsToMany(Tag, {
   through: {
     model: ProductTag
   },
+// prevents these fields from showing up twice when creating them
 foreignKey: 'product_id',
 otherKey: 'tag_id',
 });
@@ -24,6 +25,7 @@ Tag.belongsToMany(Product, {
   through: {
     model: ProductTag,
   },
+// prevents these fields from showing up twice when creating them
   foreignKey: 'tag_id',
   otherKey: 'product_id',
 });
